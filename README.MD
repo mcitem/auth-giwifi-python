@@ -5,6 +5,7 @@ python Giwifi自动认证
 
 
 # 使用
+ip(可选) 默认为192.168.99.120
 
 Windows下：
 
