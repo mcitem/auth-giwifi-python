@@ -18,6 +18,10 @@ pip install requests
 pip install bs4
 ```
 
+```
+python master.py username password ip(可选)
+```
+
 打包版本
 ```
 .\master.exe username password ip(可选)
@@ -29,6 +33,11 @@ pip install pycryptodome
 pip install requests
 pip install bs4
 ```
+
+```
+python master.py username password ip(可选)
+```
+
 打包版本
 ```
 chmod 777 master
