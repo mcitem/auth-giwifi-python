@@ -7,10 +7,6 @@ python Giwifi自动认证
 # 使用
 
 Windows下：
-```
-pip uninstall crypto
-pip uninstall pycryptodome
-```
 
 ```
 pip install pycryptodome
