@@ -45,3 +45,5 @@ chmod 777 master
 ```
 
 linux只在win11subsystem内debian测试过 架构x86_64
+
+pyinstaller打包
