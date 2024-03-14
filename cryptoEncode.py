@@ -11,4 +11,4 @@ def cryptoEncode(oriData,iv):
     padData = zero_pad(oriData)
     encrypted = aes.encrypt(padData)
     cryptoData = base64.b64encode(encrypted)
-    return cryptoData
+    return cryptoData.decode('utf-8')
