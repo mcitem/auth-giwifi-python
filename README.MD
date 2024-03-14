@@ -34,3 +34,5 @@ pip install bs4
 chmod 777 master
 ./master username password ip(可选)
 ```
+
+linux只在win11subsystem内debian测试过 架构x86_64
