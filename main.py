@@ -29,11 +29,12 @@ for i in frmLogin.find_all(['input'], type=['text', 'hidden','password']):
             value+=password
         elif name=="userMac":
             value=" "
+        elif name=="iv":
+            iv=value
+        elif name=="sign":
+            sign=value
         arr.append(f"{name}={value}")
 oriData = "&".join(arr)
-iv = soup.find(id="iv").get('value')
-sign = soup.find("input", {"name": "sign"}).get('value')
-
 cryptoData=cryptoEncode(oriData,iv)
 
 res=requests.post(baseURL+'/gportal/web/authLogin?round='+str(random.randint(0, 999)),headers=headers,data={'data':cryptoData,'iv':iv})
